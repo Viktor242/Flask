@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="blog-body">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">🚀 Мой сайт</a>
+            <div class="nav-links">
+                <a href="/">Главная</a>
+                <a href="/blog">Блог</a>
+                <a href="/contacts">Контакты</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="blog-main-content">
+        <div class="blog-hero-section">
+            <h1>📝 Блог</h1>
+            <p>Здесь ты найдешь интересные статьи и новости</p>
+        </div>
+
+        <div class="blog-posts">
+            <div class="blog-post">
+                <div class="post-image">
+                    <img src="{{ url_for('static', filename='images/1.jpg') }}" alt="Flask приложение">
+                </div>
+                <div class="post-content">
+                    <div class="post-date">12 августа 2025</div>
+                    <h3 class="post-title">Flask приложение</h3>
+                    <p class="post-excerpt">Создание веб-приложения на Python. Просто и быстро!</p>
+                </div>
+            </div>
+            
+            <div class="blog-post">
+                <div class="post-image">
+                    <img src="{{ url_for('static', filename='images/2.jpg') }}" alt="HTML и CSS">
+                </div>
+                <div class="post-content">
+                    <div class="post-date">10 августа 2025</div>
+                    <h3 class="post-title">HTML и CSS</h3>
+                    <p class="post-excerpt">Основы веб-разработки. Красивые страницы своими руками.</p>
+                </div>
+            </div>
+            
+                         <div class="blog-post">
+                 <div class="post-image">
+                     <img src="{{ url_for('static', filename='images/3.jpg') }}" alt="Программирование">
+                 </div>
+                 <div class="post-content">
+                     <div class="post-date">8 августа 2025</div>
+                     <h3 class="post-title">Программирование</h3>
+                     <p class="post-excerpt">Учимся кодить с нуля. Интересно и понятно!</p>
+                 </div>
+             </div>
+        </div>
+    </div>
+</body>
+</html>
